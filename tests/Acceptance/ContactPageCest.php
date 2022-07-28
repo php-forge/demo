@@ -28,6 +28,6 @@ final class ContactPageCest
 
         $I->click('Send');
 
-        $I->see("Thank you for contacting us, we'll get in touch with you as soon as possible.");
+        $I->see("Thank you for contacting us");
     }
 }
