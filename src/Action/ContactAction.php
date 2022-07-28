@@ -74,7 +74,7 @@ final class ContactAction
                 );
             }
 
-            $contactForm->reset();
+            //$contactForm->reset();
         }
 
         return $view->render('contact/index', ['form' => $contactForm, 'urlGenerator' => $urlGenerator]);
