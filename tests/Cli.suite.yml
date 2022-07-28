@@ -1,0 +1,5 @@
+actor: CliTester
+suite_namespace: Forge\App\Tests\Cli
+modules:
+    # enable helpers as array
+    enabled: [Cli]
