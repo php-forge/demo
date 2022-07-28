@@ -56,7 +56,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: output
-          path: ./tests/output
+          path: ./tests/_output
 
       - name: Download all workflow run artifacts
         uses: actions/download-artifact@v2
