@@ -8,6 +8,8 @@ use Yiisoft\Session\Flash\Flash;
 /** @var Flash $flash */
 $flashMessages = $flash->getAll() ?? [];
 
+var_dump($flashMessages);
+
 foreach ($flashMessages as $flashMessage) {
     foreach ($flashMessage as $key => $message) {
         echo Alert::create()
