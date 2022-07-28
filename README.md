@@ -6,7 +6,7 @@
     <br>
 </p>
 
-[![Build Status](https://github.com/php-forge/demo/workflows/build/badge.svg)](https://github.com/php-forge/demo/actions?query=workflow%3Abuild)
+[![codeception](https://github.com/php-forge/demo/actions/workflows/codeception.yml/badge.svg)](https://github.com/php-forge/demo/actions/workflows/codeception.yml)
 [![codecov](https://codecov.io/gh/php-forge/demo/branch/main/graph/badge.svg?token=KB6T5KMGED)](https://codecov.io/gh/php-forge/demo)
 [![static analysis](https://github.com/php-forge/demo/workflows/static%20analysis/badge.svg)](https://github.com/php-forge/demo/actions?query=workflow%3A%22static+analysis%22)
 [![type-coverage](https://shepherd.dev/github/php-forge/demo/coverage.svg)](https://shepherd.dev/github/php-forge/demo)
@@ -56,8 +56,8 @@ Las pruebas unitarias se comprueban con [PHPUnit](https://phpunit.de/). Para eje
 
 ## Calidad y estilo de código
 
-[![Codacy Badge](https://demo.codacy.com/project/badge/Grade/664b96add8e447a4a29050d0cdfa797e)](https://www.codacy.com/gh/php-forge/demo/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=php-forge/demo&amp;utm_campaign=Badge_Grade)
-[![StyleCI](https://github.styleci.io/repos/510109439/shield?branch=main)](https://github.styleci.io/repos/510109439?branch=main)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/c4bdab17970b4426ac28b0bbb4d5e698)](https://www.codacy.com/gh/php-forge/demo/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=php-forge/demo&amp;utm_campaign=Badge_Grade)
+[![StyleCI](https://github.styleci.io/repos/518743233/shield?branch=main)](https://github.styleci.io/repos/518743233?branch=main)
 
 ## Licencia
 
