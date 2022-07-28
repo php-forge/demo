@@ -1,37 +1,122 @@
 {
-    "name": "php-forge/template",
+    "name": "forge/demo",
     "type": "library",
-    "description": "_____",
+    "description": "Demo para yii3",
     "keywords": [
-        "_____"
+        "yii",
+        "demo"
     ],
     "license": "BSD-3-Clause",
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php": "^8.0"
+        "php": ">=8.0",
+        "forge/html-widgets": "^1.0@dev",
+        "forge/user": "^1.0@dev",
+        "forge/service": "^1.0@dev",
+        "forge/yii-form-validator": "^1.0@dev",
+        "nyholm/psr7": "^1.3",
+        "yiisoft/aliases": "^2.0",
+        "yiisoft/config": "^1.0",
+        "yiisoft/csrf": "^1.0",
+        "yiisoft/data-response": "^1.0",
+        "yiisoft/definitions": "^2.0",
+        "yiisoft/di": "^1.0",
+        "yiisoft/error-handler": "^2.0",
+        "yiisoft/event-dispatcher": "^1.0",
+        "yiisoft/i18n": "^1.0",
+        "yiisoft/log-target-file": "^2.0",
+        "yiisoft/log": "^2.0",
+        "yiisoft/mailer-symfony": "^1.0",
+        "yiisoft/router-fastroute": "^1.0",
+        "yiisoft/session": "^1.0",
+        "yiisoft/yii-console": "^1.0",
+        "yiisoft/yii-http": "^1.0",
+        "yiisoft/yii-runner-console": "^1.0",
+        "yiisoft/yii-runner-http": "^1.0",
+        "yiisoft/yii-view": "^4.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "*",
-        "roave/infection-static-analysis-plugin": "*",
-        "vimeo/psalm": "*"
+        "codeception/c3": "^2.6.5",
+        "codeception/codeception": "^4.2",
+        "codeception/module-asserts": "^2.0",
+        "codeception/module-cli": "^2.0",
+        "codeception/module-phpbrowser": "^2.0",
+        "yiisoft/db-sqlite": "^3.0@dev",
+        "vimeo/psalm": "^4.7"
     },
     "autoload": {
         "psr-4": {
-            "Template\\": "src"
+            "Forge\\Demo\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Template\\Tests\\": "tests"
+            "Forge\\Demo\\Tests\\": "tests"
         }
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0.x-dev"
+            "dev-main": "1.0.x-dev"
+        },
+        "config-plugin-options": {
+            "source-directory": "config"
+        },
+        "config-plugin": {
+            "common": "common/*.php",
+            "params": "params.php",
+            "web": [
+                "$common",
+                "web/*.php"
+            ],
+            "console": [
+                "$common",
+                "console/*.php"
+            ],
+            "event": "events.php",
+            "event-web": [
+                "$events",
+                "events-web.php"
+            ],
+            "event-console": [
+                "$events",
+                "events-console.php"
+            ],
+            "providers": "providers.php",
+            "providers-web": [
+                "$providers",
+                "providers-web.php"
+            ],
+            "providers-console": [
+                "$providers",
+                "providers-console.php"
+            ],
+            "delegates": "delegates.php",
+            "delegates-web": [
+                "$delegates",
+                "delegates-web.php"
+            ],
+            "delegates-console": [
+                "$delegates",
+                "delegates-console.php"
+            ],
+            "bootstrap": "bootstrap.php",
+            "bootstrap-web": [
+                "$bootstrap",
+                "bootstrap-web.php"
+            ],
+            "bootstrap-console": [
+                "$bootstrap",
+                "bootstrap-console.php"
+            ],
+            "routes": "routes.php"
         }
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "yiisoft/config": true,
+            "codeception/c3": true
+        }
     }
 }
