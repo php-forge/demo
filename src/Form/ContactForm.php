@@ -46,15 +46,6 @@ final class ContactForm extends FormValidator
         ];
     }
 
-    public function reset(): void
-    {
-        $this->attachment = [];
-        $this->email = '';
-        $this->message = '';
-        $this->name = '';
-        $this->subject = '';
-    }
-
     public function getEmail(): string
     {
         return $this->email;

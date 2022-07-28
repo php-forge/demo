@@ -64,6 +64,8 @@ final class ContactAction
                         'type' => 'success',
                     ]
                 );
+
+                $this->redirect('home');
             } else {
                 $flash->add(
                     'forge-app',
@@ -73,8 +75,6 @@ final class ContactAction
                     ]
                 );
             }
-
-            //$contactForm->reset();
         }
 
         return $view->render('contact/index', ['form' => $contactForm, 'urlGenerator' => $urlGenerator]);
