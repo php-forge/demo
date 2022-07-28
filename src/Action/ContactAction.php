@@ -64,8 +64,6 @@ final class ContactAction
                         'type' => 'success',
                     ]
                 );
-
-                $this->redirect('home');
             } else {
                 $flash->add(
                     'forge-app',
