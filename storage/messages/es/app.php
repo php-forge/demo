@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 return [
     'contact.alert' => 'Si tiene consultas u otras preguntas, complete el siguiente formulario para comunicarse con <b>terabytesoftw</b>, Gracias.',
     'contact.button.reset' => 'Reiniciar',

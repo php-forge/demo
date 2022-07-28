@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-use Forge\App\Form\ContactForm;
 use Forge\Form\ButtonGroup;
 use Forge\Form\Field;
 use Forge\Form\Form;
