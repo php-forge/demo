@@ -8,7 +8,6 @@
 
 [![Build Status](https://github.com/php-forge/demo/workflows/build/badge.svg)](https://github.com/php-forge/demo/actions?query=workflow%3Abuild)
 [![codecov](https://codecov.io/gh/php-forge/demo/branch/main/graph/badge.svg?token=KB6T5KMGED)](https://codecov.io/gh/php-forge/demo)
-[![Mutation testing badge](https://img.shields.io/endpoint?style=flat&url=https%3A%2F%2Fbadge-api.stryker-mutator.io%2Fgithub.com%2Fphp-forge%2Fdemo%2Fmain)](https://dashboard.stryker-mutator.io/reports/github.com/php-forge/demo/main)
 [![static analysis](https://github.com/php-forge/demo/workflows/static%20analysis/badge.svg)](https://github.com/php-forge/demo/actions?query=workflow%3A%22static+analysis%22)
 [![type-coverage](https://shepherd.dev/github/php-forge/demo/coverage.svg)](https://shepherd.dev/github/php-forge/demo)
 
@@ -16,6 +15,19 @@
 
 ```shell
 composer create-project --prefer-dist forge/demo <your project>
+```
+## Como usar
+
+### Aplicando migraciones
+
+```shell
+./yii migrate/up --no-interaction
+```
+
+### Usando el servidor de built-in PHP 
+
+```shell
+php -S 127.0.0.1:8080 -t public
 ```
 
 ## Análisis estático
