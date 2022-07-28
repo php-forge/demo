@@ -9,5 +9,5 @@ modules:
     enabled:
         - PhpBrowser:
             url: http://localhost:8080
-        - \Forge\App\Tests\Helper\Acceptance
+        - \Forge\Demo\Tests\Helper\Acceptance
 step_decorators: ~

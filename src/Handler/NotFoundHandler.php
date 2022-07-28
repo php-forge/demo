@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Forge\App\Handler;
+namespace Forge\Demo\Handler;
 
 use Psr\Http\Message\ResponseFactoryInterface;
 use Psr\Http\Message\ResponseInterface;

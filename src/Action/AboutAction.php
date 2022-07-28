@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Forge\App\Action;
+namespace Forge\Demo\Action;
 
 use Forge\Service\View;
 use Psr\Http\Message\ResponseFactoryInterface;

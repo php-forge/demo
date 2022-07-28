@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Forge\App\Tests\Acceptance;
+namespace Forge\Demo\Tests\Acceptance;
 
-use Forge\App\Tests\AcceptanceTester;
+use Forge\Demo\Tests\AcceptanceTester;
 
 final class ErrorPageCest
 {

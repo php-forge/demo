@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Forge\App\Tests;
+namespace Forge\Demo\Tests;
 
 /**
  * Inherited Methods

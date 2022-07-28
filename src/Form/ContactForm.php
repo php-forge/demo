@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Forge\App\Form;
+namespace Forge\Demo\Form;
 
 use Forge\FormValidator\Error\RequiredError;
 use Forge\FormValidator\FormValidator;

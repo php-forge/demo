@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use Forge\App\Command\HelloCommand;
-use Forge\App\Middleware\Locale;
+use Forge\Demo\Command\HelloCommand;
+use Forge\Demo\Middleware\Locale;
 use Yiisoft\Aliases\Aliases;
 use Yiisoft\Cookies\CookieMiddleware;
 use Yiisoft\Csrf\CsrfTokenInterface;

@@ -1,4 +1,4 @@
-namespace: Forge\App\Tests
+namespace: Forge\Demo\Tests
 paths:
     tests: tests
     output: tests/_output

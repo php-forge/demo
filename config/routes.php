@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-use Forge\App\Action\AboutAction;
-use Forge\App\Action\ContactAction;
-use Forge\App\Action\HomeAction;
+use Forge\Demo\Action\AboutAction;
+use Forge\Demo\Action\ContactAction;
+use Forge\Demo\Action\HomeAction;
 use Yiisoft\Http\Method;
 use Yiisoft\Router\Route;
 

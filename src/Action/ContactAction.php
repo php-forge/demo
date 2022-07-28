@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Forge\App\Action;
+namespace Forge\Demo\Action;
 
-use Forge\App\Form\ContactForm;
+use Forge\Demo\Form\ContactForm;
 use Forge\Service\Mailer;
 use Forge\Service\View;
 use Psr\Http\Message\ResponseFactoryInterface;

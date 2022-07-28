@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use Forge\App\Handler\NotFoundHandler;
-use Forge\App\Middleware\Locale;
+use Forge\Demo\Handler\NotFoundHandler;
+use Forge\Demo\Middleware\Locale;
 use Yiisoft\Definitions\DynamicReference;
 use Yiisoft\Definitions\Reference;
 use Yiisoft\Middleware\Dispatcher\MiddlewareDispatcher;
