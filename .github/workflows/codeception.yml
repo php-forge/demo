@@ -2,11 +2,14 @@ on:
   pull_request:
   push:
 
-name: build
+name: codeception
 
 jobs:
   tests:
     name: PHP ${{ matrix.php }}-${{ matrix.os }}
+
+    env:
+      extensions: fileinfo, gd, intl
 
     runs-on: ${{ matrix.os }}
 
@@ -27,7 +30,7 @@ jobs:
       - name: Install PHP
         uses: shivammathur/setup-php@v2
         with:
-          extensions: fileinfo, intl
+          extensions: ${{ env.extensions }}
           php-version: ${{ matrix.php }}
           ini-values: date.timezone='UTC'
           coverage: pcov
