@@ -32,6 +32,7 @@ final class ContactAction
         ValidatorInterface $validator,
         View $view
     ): ResponseInterface {
+        /** @var string[] */
         $body = $serverRequest->getParsedBody();
         $method = $serverRequest->getMethod();
 
@@ -39,18 +40,19 @@ final class ContactAction
 
         if ($method === Method::POST && $contactForm->load($body) && $validator->validate($contactForm)->isValid()) {
             $contactFormName = $contactForm->getFormName();
-            $attachments = $serverRequest->getUploadedFiles();
+            /** @var array */
+            $attachments = $serverRequest->getUploadedFiles()[$contactFormName] ?? [];
             $mailerResult = $mailer
-                ->attachments($attachments[$contactFormName] ?? [])
-                ->from($contactForm->getAttributeValue('email'))
-                ->subject($contactForm->getAttributeValue('subject'))
+                ->attachments($attachments)
+                ->from($contactForm->getEmail())
+                ->subject($contactForm->getSubject())
                 ->signatureImage($aliases->get('@images/mail-yii3-signature.png'))
                 ->viewPath($aliases->get('@storage/mailer'))
                 ->send(
                     'admin@example.com',
                     [
-                        'message' => $contactForm->getAttributeValue('message'),
-                        'username' => $contactForm->getAttributeValue('name'),
+                        'message' => $contactForm->getMessage(),
+                        'username' => $contactForm->getName(),
                     ],
                 );
 

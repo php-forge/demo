@@ -55,6 +55,29 @@ final class ContactForm extends FormValidator
         $this->subject = '';
     }
 
+    public function getEmail(): string
+    {
+        return $this->email;
+    }
+
+    public function getMessage(): string
+    {
+        return $this->message;
+    }
+
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    public function getSubject(): string
+    {
+        return $this->subject;
+    }
+
+    /**
+     * @psalm-return string[]
+     */
     private function contactTranslate(): array
     {
         return [
