@@ -48,9 +48,18 @@ jobs:
           cat public/index.php
 
       - name: Run tests with codeception
+        continue-on-error: true
         run: |
           php -S 127.0.0.1:8080 -t public public/index.php > ./runtime/yii.log 2>&1 &
           vendor/bin/codecept run --coverage-xml
+      - name: Archive codeception results
+        uses: actions/upload-artifact@v2
+        with:
+          name: output
+          path: ./tests/_output
+
+      - name: Download all workflow run artifacts
+        uses: actions/download-artifact@v2
 
       - name: Upload coverage to codecov
         if: matrix.os == 'ubuntu-latest' && matrix.php == '8.0'
