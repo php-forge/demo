@@ -16,7 +16,7 @@
 ```shell
 composer create-project --prefer-dist forge/demo <your project>
 ```
-## Como usar
+## Como usar este demo
 
 ### Aplicando migraciones
 
@@ -24,10 +24,16 @@ composer create-project --prefer-dist forge/demo <your project>
 ./yii migrate/up --no-interaction
 ```
 
-### Usando el servidor de built-in PHP 
+### Uso del servidor php incorporado
 
 ```shell
 php -S 127.0.0.1:8080 -t public
+```
+
+### Espere hasta que esté listo, luego abra la siguiente URL en su navegador
+
+```shell
+http://localhost:8080
 ```
 
 ## Análisis estático
