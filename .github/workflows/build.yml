@@ -27,7 +27,7 @@ jobs:
       - name: Install PHP
         uses: shivammathur/setup-php@v2
         with:
-          extensions: intl
+          extensions: fileinfo, intl
           php-version: ${{ matrix.php }}
           ini-values: date.timezone='UTC'
           coverage: pcov
@@ -49,15 +49,6 @@ jobs:
         run: |
           php -S 127.0.0.1:8080 -t public public/index.php > ./runtime/yii.log 2>&1 &
           vendor/bin/codecept run --coverage-xml
-
-      - name: Archive codeception results
-        uses: actions/upload-artifact@v2
-        with:
-          name: output
-          path: ./tests/_output
-
-      - name: Download all workflow run artifacts
-        uses: actions/download-artifact@v2
 
       - name: Upload coverage to codecov
         if: matrix.os == 'ubuntu-latest' && matrix.php == '8.0'
