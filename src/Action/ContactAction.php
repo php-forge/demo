@@ -7,7 +7,6 @@ namespace Forge\Demo\Action;
 use Forge\Demo\Form\ContactForm;
 use Forge\Service\Mailer;
 use Forge\Service\View;
-use Psr\Http\Message\ResponseFactoryInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Yiisoft\Aliases\Aliases;
@@ -17,7 +16,6 @@ use Yiisoft\Router\UrlGeneratorInterface;
 use Yiisoft\Session\Flash\Flash;
 use Yiisoft\Translator\TranslatorInterface;
 use Yiisoft\Validator\ValidatorInterface;
-use Yiisoft\Yii\View\ViewRenderer;
 
 final class ContactAction
 {

@@ -46,7 +46,7 @@ return [
             '@translations' => '@root/storage/translations',
             '@vendor' => '@root/vendor',
             '@views' => '@storage/view',
-            '@widget' => '@root/config/widget'
+            '@widget' => '@root/config/widget',
         ],
     ],
 
@@ -80,7 +80,7 @@ return [
             'pathMap' => [
                 '@layout' => '@layout',
             ],
-        ]
+        ],
     ],
 
     'yiisoft/yii-console' => [

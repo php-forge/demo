@@ -7,7 +7,6 @@ use Forge\Html\Widgets\Components\Button;
 use Forge\Html\Widgets\Components\Nav;
 use Forge\Html\Widgets\Components\NavBar;
 use Yiisoft\Aliases\Aliases;
-use Yiisoft\Auth\IdentityInterface;
 use Yiisoft\Http\Method;
 
 /** @var Aliases $aliases  */
@@ -27,7 +26,7 @@ $locale = substr($currentRoute->getUri()->getPath(), 0, 3) === '/en'
         ->items(
             [
                 [
-                    'label' =>  $translator->translate($language),
+                    'label' => $translator->translate($language),
                     'link' => '#',
                     'items' => [
                         [
@@ -42,11 +41,11 @@ $locale = substr($currentRoute->getUri()->getPath(), 0, 3) === '/en'
                 ],
                 [
                     'label' => $translator->translate('menu.contact'),
-                    'link' =>  $urlGenerator->generate('contact', ['_language' => $locale]),
+                    'link' => $urlGenerator->generate('contact', ['_language' => $locale]),
                 ],
                 [
                     'label' => $translator->translate('menu.about'),
-                    'link' =>  $urlGenerator->generate('about', ['_language' => $locale]),
+                    'link' => $urlGenerator->generate('about', ['_language' => $locale]),
                 ],
             ]
         )

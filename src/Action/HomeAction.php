@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Forge\Demo\Action;
 
 use Forge\Service\View;
-use Psr\Http\Message\ResponseFactoryInterface;
 use Psr\Http\Message\ResponseInterface;
 
 final class HomeAction

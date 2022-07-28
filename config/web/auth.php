@@ -3,9 +3,7 @@
 declare(strict_types=1);
 
 use Forge\User\Repository\IdentityRepository;
-use Psr\Container\ContainerInterface;
 use Psr\Log\LoggerInterface;
-use Yiisoft\Access\AccessCheckerInterface;
 use Yiisoft\Auth\IdentityRepositoryInterface;
 use Yiisoft\Cookies\CookieEncryptor;
 use Yiisoft\Cookies\CookieMiddleware;
