@@ -8,6 +8,6 @@
 actor: FunctionalTester
 modules:
     enabled:
-        # add a framework module here
-        - \Forge\Demo\Tests\Helper\Functional
+        - PhpBrowser:
+            url: http://localhost:8080
     step_decorators: ~

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Forge\Demo\Tests;
+namespace Forge\Demo\Tests\Support;
 
 /**
  * Inherited Methods
@@ -16,7 +16,7 @@ namespace Forge\Demo\Tests;
  * @method void am($role)
  * @method void lookForwardTo($achieveValue)
  * @method void comment($description)
- * @method void pause()
+ * @method void pause($vars = [])
  *
  * @SuppressWarnings(PHPMD)
 */

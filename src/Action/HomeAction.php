@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace Forge\Demo\Action;
 
-use Forge\Service\View;
 use Psr\Http\Message\ResponseInterface;
+use Yiisoft\Yii\View\ViewRenderer;
 
 final class HomeAction
 {
-    public function run(View $view): ResponseInterface
+    public function run(ViewRenderer $viewRenderer): ResponseInterface
     {
-        return $view->render('blog/home');
+        return $viewRenderer->render('blog/home');
     }
 }

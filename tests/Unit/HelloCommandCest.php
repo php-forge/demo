@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Forge\Demo\Tests\Unit;
 
-use Forge\Demo\Tests\UnitTester;
+use Forge\Demo\Tests\Support\UnitTester;
 use Psr\Container\ContainerInterface;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\CommandLoader\ContainerCommandLoader;

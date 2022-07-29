@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Forge\Demo\Tests\Acceptance;
 
-use Forge\Demo\Tests\AcceptanceTester;
+use Forge\Demo\Tests\Support\AcceptanceTester;
 
 final class ErrorPageCest
 {
