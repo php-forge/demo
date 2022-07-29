@@ -6,7 +6,6 @@ namespace Forge\Demo\Action;
 
 use Forge\Demo\Form\ContactForm;
 use Forge\Service\Mailer;
-use Forge\Service\View;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Yiisoft\Aliases\Aliases;
@@ -16,6 +15,7 @@ use Yiisoft\Router\UrlGeneratorInterface;
 use Yiisoft\Session\Flash\Flash;
 use Yiisoft\Translator\TranslatorInterface;
 use Yiisoft\Validator\ValidatorInterface;
+use Yiisoft\Yii\View\ViewRenderer;
 
 final class ContactAction
 {
@@ -28,7 +28,7 @@ final class ContactAction
         TranslatorInterface $translator,
         UrlGeneratorInterface $urlGenerator,
         ValidatorInterface $validator,
-        View $view
+        ViewRenderer $viewRenderer
     ): ResponseInterface {
         /** @var string[] */
         $body = $serverRequest->getParsedBody();
@@ -73,6 +73,6 @@ final class ContactAction
             }
         }
 
-        return $view->render('contact/index', ['form' => $contactForm, 'urlGenerator' => $urlGenerator]);
+        return $viewRenderer->render('contact/index', ['form' => $contactForm, 'urlGenerator' => $urlGenerator]);
     }
 }

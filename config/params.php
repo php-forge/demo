@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 use Forge\Demo\Command\HelloCommand;
-use Forge\Demo\Middleware\Locale;
 use Yiisoft\Aliases\Aliases;
 use Yiisoft\Cookies\CookieMiddleware;
 use Yiisoft\Csrf\CsrfTokenInterface;
@@ -17,6 +16,7 @@ use Yiisoft\Session\SessionMiddleware;
 use Yiisoft\Translator\TranslatorInterface;
 use Yiisoft\User\CurrentUser;
 use Yiisoft\User\Login\Cookie\CookieLoginMiddleware;
+use Yiisoft\Yii\Middleware\Locale;
 
 return [
     'locales' => ['en' => 'en-US', 'es' => 'es-ES', 'ru' => 'ru-RU'],

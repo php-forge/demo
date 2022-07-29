@@ -1,4 +1,5 @@
 namespace: Forge\Demo\Tests
+support_namespace: Support
 paths:
     tests: tests
     output: tests/_output
@@ -18,5 +19,3 @@ coverage:
     whitelist:
         include:
             - src/*
-        exclude:
-            - src/Middleware/*

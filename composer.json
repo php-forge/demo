@@ -27,14 +27,15 @@
         "yiisoft/i18n": "^1.0",
         "yiisoft/log-target-file": "^2.0",
         "yiisoft/log": "^2.0",
-        "yiisoft/mailer-symfony": "^1.0",
+        "yiisoft/mailer-symfony": "^2.0",
         "yiisoft/router-fastroute": "^1.0",
         "yiisoft/session": "^1.0",
         "yiisoft/yii-console": "^1.0",
         "yiisoft/yii-http": "^1.0",
+        "yiisoft/yii-middleware": "dev-move-locale-middleware",
         "yiisoft/yii-runner-console": "^1.0",
         "yiisoft/yii-runner-http": "^1.0",
-        "yiisoft/yii-view": "^4.0"
+        "yiisoft/yii-view": "^5.0"
     },
     "require-dev": {
         "codeception/c3": "^2.6",

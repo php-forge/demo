@@ -44,14 +44,6 @@ El código se analiza estáticamente con [Psalm](https://psalm.dev/docs). Para e
 ./vendor/bin/psalm
 ```
 
-## Pruebas de mutación
-
-Las pruebas de mutación se comprueban con [Infection](https://infection.github.io/). Para ejecutarlo:
-
-```shell
-./vendor/bin/roave-infection-static-analysis-plugin
-```
-
 ## Pruebas unitarias
 
 Las pruebas unitarias se comprueban con [PHPUnit](https://phpunit.de/). Para ejecutarlo:
