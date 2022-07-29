@@ -12,7 +12,8 @@ final class AboutAction
 {
     public function run(CurrentRoute $currentRoute, ViewRenderer $viewRenderer): ResponseInterface
     {
-        $lenguage = $currentRoute->getArgument('_language');
-        return $viewRenderer->render('blog/' . $lenguage . '/about');
+        $locale = $currentRoute->getArgument('_language') ?? 'en';
+
+        return $viewRenderer->withLocale($locale)->render('blog/about');
     }
 }
