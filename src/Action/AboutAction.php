@@ -5,12 +5,15 @@ declare(strict_types=1);
 namespace Forge\Demo\Action;
 
 use Psr\Http\Message\ResponseInterface;
+use Yiisoft\Router\CurrentRoute;
 use Yiisoft\Yii\View\ViewRenderer;
 
 final class AboutAction
 {
-    public function run(ViewRenderer $viewRenderer): ResponseInterface
+    public function run(CurrentRoute $currentRoute, ViewRenderer $viewRenderer): ResponseInterface
     {
-        return $viewRenderer->render('blog/about');
+        $locale = $currentRoute->getArgument('_language') ?? 'en';
+
+        return $viewRenderer->withLocale($locale)->render('blog/about');
     }
 }
