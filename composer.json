@@ -32,7 +32,6 @@
         "yiisoft/session": "^1.0",
         "yiisoft/yii-console": "^1.0",
         "yiisoft/yii-http": "^1.0",
-        "yiisoft/yii-middleware": "dev-move-locale-middleware",
         "yiisoft/yii-runner-console": "^1.0",
         "yiisoft/yii-runner-http": "^1.0",
         "yiisoft/yii-view": "^5.0"
